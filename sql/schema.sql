@@ -83,7 +83,6 @@ CREATE TABLE sales_record (
 -- 4. ИНДЕКСЫ
 CREATE INDEX idx_product_category        ON product (category_id);
 CREATE INDEX idx_product_supplier        ON product (supplier_id);
-CREATE INDEX idx_price_history_product   ON product_price_history (product_sk);
 CREATE INDEX idx_sales_product           ON sales_record (product_sk);
 CREATE INDEX idx_sales_location          ON sales_record (location_id);
 CREATE INDEX idx_sales_age_group         ON sales_record (age_group_id);
