@@ -133,7 +133,7 @@ base_cost (NUMERIC(6,2)) - МАКС.ЗНАЧЕНИЕ: 50. Достаточно 4
 
 discount,tax_rate,stock_level,popularity_index (SMALLINT) - Значения в общих случаях не превышают 100 целых чисел (Максимум 500 для stock_level)
 
-return_rate (NUMERIC(4,2)) - дробный процент
+return_rate (NUMERIC(5,2)) - дробный процент
 
 seasonality (BOOLEAN) - Принимает всего 2 значения: YES или NO.
 
@@ -167,7 +167,7 @@ method_name, gender_name, range_code и подобные (VARCHAR(20-50)) - пе
 | Shipping Cost | SALES_RECORD | shipping_cost | NUMERIC(6,2) | 20.88 | Да | Нет | коммерческая тайна (договорные тарифы перевозчиков) |
 | Shipping Method | SHIPPING_METHOD | method_name | VARCHAR(20) | Overnight | Да | Да | открытые данные (публичная услуга) |
 | Shipping Method | SALES_RECORD | shipping_method_id (FK) | SMALLINT | 3 | Да | Нет | ссылочный атрибут |
-| Return Rate | PRODUCT | return_rate | NUMERIC(4,2) | 16.11 | Нет | Нет | коммерческая тайна (внутренняя аналитика рисков) |
+| Return Rate | PRODUCT | return_rate | NUMERIC(5,2) | 16.11 | Нет | Нет | коммерческая тайна (внутренняя аналитика рисков) |
 | Seasonality | SALES_RECORD | seasonality | BOOLEAN | Yes | Да | Нет | открытые данные (маркетинговый признак) |
 | Popularity Index | SALES_RECORD | popularity_index | SMALLINT | 79 | Да | Нет | коммерческая тайна (внутренние продажи/рейтинги) |
 | Generated| SALES_RECORD | sale_id | BIGINT | 1000001 | Да | Да | служебный |
