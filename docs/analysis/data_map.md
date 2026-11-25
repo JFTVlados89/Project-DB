@@ -23,7 +23,7 @@ stock_level - ОБЯЗАТЕЛЬНЫЙ
 
 tax_rate (SMALLINT, %) - ОБЯЗАТЕЛЬНЫЙ
 
-return_rate
+return_rate - ОБЯЗАТЕЛЬНЫЙ 
 
 Ключ: PK product_sk; натуральный product_id.
 
